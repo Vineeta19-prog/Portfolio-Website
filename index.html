@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frontend Developer Portfolio">
+  <title>Frontend Developer Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="intro">
+      <h1>Hi, I'm Vineeta </h1>
+      <p>Final-year B.Tech CSE student (CGPA: 8.32) with internship experience in frontend development at Cognifyz 
+Technologies. Proficient in Java, JavaScript, React.js, HTML5, CSS3, SQL, DSA, and OOP. Seeking an entry-level 
+Software Developer or Frontend Developer role.</p>
+      <button onclick="scrollToSection('about')">Learn More</button>
+    </div>
+    <div id="pic">
+       <img src="pic.jpg" alt="profile"/>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I have real-world experience as a Frontend Developer Intern at Cognifyz Technologies, where I built responsive web interfaces, integrated APIs using asynchronous JavaScript, and implemented modular, maintainable UI components.  
+Beyond web development, I have a solid foundation in Java and Data Structures & Algorithms — skills I actively strengthened. I'm comfortable with core concepts like Arrays, Strings, Linked Lists, Searching & Sorting, and basic problem-solving patterns.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>JAVA</li>
+      <li>SQL</li>
+
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+      <h3>To Do List</h3>
+        <p>Developed a client-side task manager with add, delete, and toggle features; implemented localStorage API for 
+persistent data retention across browser sessions. 
+• Designed a clean, responsive UI with visual task states (completed/incomplete), gradients, and rounded components 
+ensuring intuitive usability. </p>
+      </div>
+      <div class="project-card">
+       <h3>Portfolio Website</h3>
+        <p> Built a fully responsive personal portfolio with dynamic navigation, project showcase, smooth animations, and 
+consistent cross-device user experience. 
+• Implemented interactive elements using JavaScript and modern CSS layouts to improve accessibility and 
+engagement across mobile and desktop devices. </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me through email or via my social media links.</p>
+    <form id="contact-form" onsubmit="handleSubmit(event)">
+      <input type="Name" id="Name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 vineeta | Frontend Developer | Software Developer</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
